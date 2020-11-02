@@ -25,4 +25,14 @@ public class AppTest
 
     //TODO add a test for Counter undo()
 
+
+        @Test
+        public void testUndo1() {
+            System.out.println("testUndo");
+            Counter myCounter = new Counter(10);
+            int expResult = 0;
+            myCounter.undo();
+            int result = myCounter.getCount();
+            assertEquals(expResult, result);
+        }
 }

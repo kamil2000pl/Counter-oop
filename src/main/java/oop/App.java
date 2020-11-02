@@ -23,16 +23,28 @@ public class App
 
         //TODO - add call to reset() that you implement in Counter class
 
+        myCounter.reset();
 
         //TODO - add call to undo() that you implement in Counter class
 
+        myCounter.undo();
+
         //TODO
         // Add a JUnit test method to test undo()
+
+
 
         //TODO
         // Create a second Counter object, then
         // click() it once, undo() twice, click(), then display()
         // What count do you expect?
+
+        Counter myCounter1 = new Counter(10);
+        myCounter1.click();
+        myCounter1.undo();
+        myCounter1.undo();
+        myCounter1.click();
+        myCounter1.display();
 
     }
 
