@@ -46,6 +46,17 @@ public class App
         myCounter1.click();
         myCounter1.display();
 
+
+
+        Counter myCounter2 = new Counter(5);
+        myCounter2.click();
+        myCounter2.click();
+        myCounter2.click();
+        myCounter2.click();
+        myCounter2.click();
+        myCounter2.click();
+        myCounter2.display();
+
     }
 
 }

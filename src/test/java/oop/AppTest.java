@@ -8,7 +8,7 @@ import org.junit.Test;
 /**
  * Unit test for Count class.
  */
-public class AppTest 
+public class AppTest
 {
     /**
      * Test the click() method
@@ -26,13 +26,13 @@ public class AppTest
     //TODO add a test for Counter undo()
 
 
-        @Test
-        public void testUndo1() {
-            System.out.println("testUndo");
-            Counter myCounter = new Counter(10);
-            int expResult = 0;
-            myCounter.undo();
-            int result = myCounter.getCount();
-            assertEquals(expResult, result);
-        }
+    @Test
+    public void testUndo1() {
+        System.out.println("testUndo");
+        Counter myCounter = new Counter(10);
+        int expResult = 0;
+        myCounter.undo();
+        int result = myCounter.getCount();
+        assertEquals(expResult, result);
+    }
 }
